@@ -1,0 +1,22 @@
+{
+	"site": {
+		"lang": "en",
+		"title": "GenesisLab Inc.",
+		"titleDelim": " | ",
+		"description": "GenesisLab Official Web Site",
+		"keywords": "GenesisLab, Technology, Software Development, IT Consultation"
+	},
+	"modules": {
+		"googleFonts": "https://fonts.googleapis.com/css?family=Lato:400,300,700",
+		"bodyJs": true,
+		"headJs": false,
+		"customCss": true,
+		"noscriptCss": false,
+		"twitterCard": false,
+		"openGraph": false
+	},
+	"links": {
+		"twitterCardCreator": "===twittercard-creator-account===",
+		"twitterCardAccount": "===twittercard-main-account==="
+	}
+}
