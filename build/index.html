@@ -72,58 +72,28 @@
       </div>
     </section>
     <!-- $Team section-->
-    <section class="team" id="team">
+    <section class="team js-portfolio" id="team">
       <div class="team__inner">
-        <h2 class="team__title">About us</h2>
+        <h2 class="team__title">Our Team</h2>
         <p class="team__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div class="team__member"><img src="static/images/genesislab/profiles/sandun.jpeg" alt="Sandun Chathranga">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Sandun Chathranga</h3><span class="team__member-role">Founder</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li><a class="team__member-icon fb" href="#">My Facebook</a></li>
-            <li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li>
-            <li><a class="team__member-icon gplus" href="#">My Google+</a></li>
-            <li><a class="team__member-icon db" href="#">I am on Dribble</a></li>
+        <nav class="portfolio__filter">
+          <ul>
+            <li class="portfolio__filter-btn is-selected js-filter" data-filter="all">All</li>
+            <li class="portfolio__filter-btn js-filter" data-filter="founder">Founders</li>
+            <li class="portfolio__filter-btn js-filter" data-filter="developer">Developers</li>
+            <li class="portfolio__filter-btn js-filter" data-filter="ba">Business Adminstrators</li>
           </ul>
-        </div>
-        <div class="team__member"><img src="static/images/genesislab/profiles/milinda.jpg" alt="Milinda Bandara">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Milinda Bandara</h3><span class="team__member-role">Co-Founder</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li><a class="team__member-icon fb" href="#">My Facebook</a></li>
-            <li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li>
-            <li><a class="team__member-icon gplus" href="#">My Google+</a></li>
-            <li><a class="team__member-icon db" href="#">I am on Dribble</a></li>
-          </ul>
-        </div>
-        <div class="team__member"><img src="static/images/genesislab/profiles/darshana.jpeg" alt="Darshana Konara">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Darshana Konara</h3><span class="team__member-role">Developer</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li><a class="team__member-icon fb" href="#">My Facebook</a></li>
-            <li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li>
-            <li><a class="team__member-icon gplus" href="#">My Google+</a></li>
-            <li><a class="team__member-icon db" href="#">I am on Dribble</a></li>
-          </ul>
-        </div>
-        <div class="team__member"><img src="static/images/genesislab/profiles/lasitha.jpg" alt="Lasitha Ludman">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Lasitha Ludman</h3><span class="team__member-role">QA Engineer</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li><a class="team__member-icon fb" href="#">My Facebook</a></li>
-            <li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li>
-            <li><a class="team__member-icon gplus" href="#">My Google+</a></li>
-            <li><a class="team__member-icon db" href="#">I am on Dribble</a></li>
-          </ul>
-        </div>
+        </nav>
+        <ul class="portfolio__content">
+          <li class="portfolio__item js-item" data-cat="all founder"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/genesislab/profiles/sandun.jpeg" alt="Sandun Chathranga">
+              <div class="portfolio__item-caption"><span class="team__item-title">Sandun Jayasinghe</span><span class="team_Founder__item-cat">Founder	</span></div></a></li>
+          <li class="portfolio__item js-item" data-cat="all founder"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/genesislab/profiles/milinda.jpg" alt="Milinda Bandara">
+              <div class="portfolio__item-caption"><span class="team__item-title">Milinda Bandara</span><span class="team_Founder__item-cat">Founder</span></div></a></li>
+          <li class="portfolio__item js-item" data-cat="all founder"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/genesislab/profiles/darshana.jpeg" alt="Darshana Thaweesha">
+              <div class="portfolio__item-caption"><span class="team__item-title">Darshana Konara</span><span class="team_Founder__item-cat">Founder</span></div></a></li>
+          <li class="portfolio__item js-item" data-cat="all developer"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/genesislab/profiles/lasitha.jpg" alt="Lasitha Ludman">
+              <div class="portfolio__item-caption"><span class="team__item-title">Lasitha Ludman</span><span class="team_De-cat">Developer</span></div></a></li>
+        </ul>
       </div>
     </section>
     <!-- $Contact section-->
