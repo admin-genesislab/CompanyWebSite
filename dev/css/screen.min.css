@@ -498,7 +498,6 @@ body {
 .portfolio__filter-btn {
 	display: inline-block;
 	font-size: 14px;
-	text-transform: uppercase;
 	padding: 10px;
 	color: #fff;
 	background-color: #4682bb;
