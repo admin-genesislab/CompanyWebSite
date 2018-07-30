@@ -22,7 +22,7 @@
             $itemHidden = $("." + this.options.itemHidden),
             $filterLink = $this.find("." + this.options.filterLink),
             $filterSelected = $("." + this.options.filterSelected);
-
+            
         $filterLink.on('click', function(){
         	if (!$(this).hasClass("is-selected")) {
 				$filterLink.removeClass('is-selected');
