@@ -103,12 +103,6 @@ block body-content
 		.team__inner
 			h2.team__title Our Team
 			p.team__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-			nav.portfolio__filter
-				ul
-					li.portfolio__filter-btn.js-filter(data-filter='all') All
-					li.portfolio__filter-btn.is-selected.js-filter(data-filter='founder') Founders
-					li.portfolio__filter-btn.js-filter(data-filter='dev') Developers
-					li.portfolio__filter-btn.js-filter(data-filter='ba') Business Adminstrators
 			ul.portfolio__content
 				li.portfolio__item.js-item(data-cat='founder dev all')
 					a(href='#')
@@ -128,13 +122,9 @@ block body-content
 						.portfolio__item-caption
 							span.team__item-title Darshana Konara
 							span.team_Founder__item-cat Founder
-				li.portfolio__item.js-item(data-cat='dev all')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/lasitha.jpg', alt='Lasitha Ludman')
-						.portfolio__item-caption
-							span.team__item-title Lasitha Ludman
-							span.team_Developer__item-cat Developer
-								
+				
+				a.promo__btn(href='team.html') Explore Team			
+	
 	// $Contact section
 	section#contact.contact
 		.contact__inner

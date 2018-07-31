@@ -1,0 +1,97 @@
+extends ../layouts/base
+
+block variables
+	- pageLang = ""
+	- pageTitle = "Home"
+	- pageDescription = "GenesisLab Desc"
+	- pageKeywords = "Page-specific keywords"
+	- pageUrl = ""
+
+
+block body-content
+	// $Page header
+	header.page-header.js-header
+		.page-header__inner
+			.page-header__logo
+				h5 Ultimate Digital Solutions
+			nav.page-header__nav.js-nav
+				ul
+					li
+						a.page-header__nav-link.js-anchor.js-link(href='index.html') Home
+					li
+						a.page-header__nav-link.js-anchor.js-link(href='#team') Our Team
+					li
+						a.page-header__nav-link.js-anchor.js-link(href='#contact') Contact Us
+
+	// $Team section
+	section#team.team.js-portfolio
+		.team__inner
+			h2.team__title Our Team
+			p.team__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			nav.portfolio__filter
+				ul
+					li.portfolio__filter-btn.is-selected.js-filter(data-filter='all') All
+					li.portfolio__filter-btn.js-filter(data-filter='founder') Founders
+					li.portfolio__filter-btn.js-filter(data-filter='dev') Developers
+					li.portfolio__filter-btn.js-filter(data-filter='ba') Business Adminstrators
+			ul.portfolio__content
+				li.portfolio__item.js-item(data-cat='founder dev all')
+					a(href='#')
+						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/sandun.jpeg', alt='Sandun Chathranga')
+						.portfolio__item-caption
+							span.team__item-title Sandun Jayasinghe
+							span.team_Founder__item-cat Founder	
+				li.portfolio__item.js-item(data-cat='founder dev all')
+					a(href='#')
+						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/milinda.jpg', alt='Milinda Bandara')
+						.portfolio__item-caption
+							span.team__item-title Milinda Bandara
+							span.team_Founder__item-cat Founder
+				li.portfolio__item.js-item(data-cat='founder dev all')
+					a(href='#')
+						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/darshana.jpeg', alt='Darshana Thaweesha')
+						.portfolio__item-caption
+							span.team__item-title Darshana Konara
+							span.team_Founder__item-cat Founder
+				li.portfolio__item.js-item(data-cat='dev all')
+					a(href='#')
+						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/lasitha.jpg', alt='Lasitha Ludman')
+						.portfolio__item-caption
+							span.team__item-title Lasitha Ludman
+							span.team_Developer__item-cat Developer
+								
+	// $Contact section
+	section#contact.contact
+		.contact__inner
+			h2.contact__title Contact us
+			p.contact__descr We welcome your feedback, questions, comments and complaints. We keep customers at the heart of what we do, and we use your feedback to improve what we do and how we do it.
+			form.contact__form(action='#', method='post')
+				input#name.contact__form-input(type='text', name='name', placeholder='Your name')
+				input#email.contact__form-input(type='email', name='email', placeholder='Your email')
+				textarea#message.contact__form-tarea(name='message', placeholder='Your message')
+				input.contact__form-submit(type='submit', value='Submit')
+			.contact__card.vcard
+				h3.contact__card-title Information
+				.contact__card-item.place
+					.fn.org GenesisLab Inc.
+					.adr
+						.street-address Pussellawa
+						span.locality Kurunegala
+						| ,
+						span.region Sri Lanka.
+				.contact__card-item.tel
+					| +94 71 &nbsp; 3264 &nbsp; 601
+					span.type &nbsp; - &nbsp; Sandun Chathuranga 
+	
+				.contact__card-item.tel
+					| +94 71 &nbsp; 3264 &nbsp; 601
+					span.type &nbsp; - &nbsp; Milinda Bandara 
+	
+				a.contact__card-item.email(href='#') contactus@genesislab.tech
+
+
+	// $Page footer
+	footer.page-footer
+		.page-footer__inner
+			span.page-footer__copyright GenesisLab Inc. |  &copy; Copyright 2018
+			a.page-footer__gotop.js-anchor(href='#home') Go to top

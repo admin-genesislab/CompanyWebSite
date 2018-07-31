@@ -25,7 +25,7 @@
             $navLink = $("." + this.options.navLink),
             $header = $("." + this.options.header),
             $jumbo = $("." + this.options.jumbo),
-            navHeight = $this.height(),
+            navHeight = $this.height()+50,
             navTopOffset = $header.offset().top,
             aArray = [],
             i;
@@ -53,7 +53,7 @@
                 target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
                 if (target.length) {
                 $("html,body").animate({
-                  scrollTop: target.offset().top
+                  scrollTop: target.offset().top-navHeight
                 }, 1000);
                 return false;
               }
@@ -75,14 +75,17 @@
                 $firstSection = $("section").eq(0);
 
             for (i = 0; i < aArray.length; i += 1) {
-                var theID = aArray[i],
-                sectPos = $(theID).offset().top - navHeight, // get the offset of the div from the top of page + except nav height
-                sectHeight = $(theID).height(); // get the height of the div in question
+               var isID = aArray[i].toLowerCase().indexOf('#');
+                if (isID > -1){
+                    var theID = aArray[i],
+                        sectPos = $(theID).offset().top - (3 * navHeight), // get the offset of the div from the top of page + except nav height
+                        sectHeight = $(theID).height(); // get the height of the div in question
 
-                if (windowPos >= sectPos && windowPos < (sectPos + sectHeight)) {
-                    $navLink.filter("[href='" + theID + "']").addClass(this.options.activeLink);
-                } else {
-                    $navLink.filter("[href='" + theID + "']").removeClass(this.options.activeLink);
+                        if (windowPos >= sectPos && windowPos < (sectPos + sectHeight)) {
+                            $navLink.filter("[href='" + theID + "']").addClass(this.options.activeLink);
+                        } else {
+                            $navLink.filter("[href='" + theID + "']").removeClass(this.options.activeLink);
+                        }
                 }
             }
         //highlight last nav list item on last section
