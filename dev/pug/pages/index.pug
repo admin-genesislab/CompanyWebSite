@@ -99,32 +99,60 @@ block body-content
 
 
 	// $Team section
-	section#team.team.js-portfolio
+	section#team.team
 		.team__inner
-			h2.team__title Our Team
+			h2.team__title About us
 			p.team__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-			ul.portfolio__content
-				li.portfolio__item.js-item(data-cat='founder dev all')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/sandun.jpeg', alt='Sandun Chathranga')
-						.portfolio__item-caption
-							span.team__item-title Sandun Jayasinghe
-							span.team_Founder__item-cat Founder	
-				li.portfolio__item.js-item(data-cat='founder dev all')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/milinda.jpg', alt='Milinda Bandara')
-						.portfolio__item-caption
-							span.team__item-title Milinda Bandara
-							span.team_Founder__item-cat Founder
-				li.portfolio__item.js-item(data-cat='founder dev all')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/genesislab/profiles/darshana.jpeg', alt='Darshana Thaweesha')
-						.portfolio__item-caption
-							span.team__item-title Darshana Konara
-							span.team_Founder__item-cat Founder
-				
-				a.promo__btn(href='team.html') Explore Team			
-	
+			.team__member
+				img(src='static/images/genesislab/profiles/sandun.jpeg', alt='Sandun Chathranga')
+				.team__member-info
+					h3.team__member-name Sandun Chathranga
+					span.team__member-role Founder
+					p.team__member-descr
+						| Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+				ul.team__member-soc
+					li
+						a.team__member-icon.fb(href='#') My Facebook
+					li
+						a.team__member-icon.tw(href='#') Follow me on twitter
+					li
+						a.team__member-icon.gplus(href='#') My Google+
+					li
+						a.team__member-icon.db(href='#') I am on Dribble
+			.team__member
+				img(src='static/images/genesislab/profiles/milinda.jpg', alt='Milinda Bandara')
+				.team__member-info
+					h3.team__member-name Milinda Bandara
+					span.team__member-role Co-Founder
+					p.team__member-descr
+						| Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+				ul.team__member-soc
+					li
+						a.team__member-icon.fb(href='#') My Facebook
+					li
+						a.team__member-icon.tw(href='#') Follow me on twitter
+					li
+						a.team__member-icon.gplus(href='#') My Google+
+					li
+						a.team__member-icon.db(href='#') I am on Dribble
+			.team__member
+				img(src='static/images/genesislab/profiles/darshana.jpeg', alt='Darshana Konara')
+				.team__member-info
+					h3.team__member-name Darshana Konara
+					span.team__member-role Developer
+					p.team__member-descr Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+				ul.team__member-soc
+					li
+						a.team__member-icon.fb(href='#') My Facebook
+					li
+						a.team__member-icon.tw(href='#') Follow me on twitter
+					li
+						a.team__member-icon.gplus(href='#') My Google+
+					li
+						a.team__member-icon.db(href='#') I am on Dribble
+
+		a.promo__btn(href='team.html') Explore Team			
+		
 	// $Contact section
 	section#contact.contact
 		.contact__inner
